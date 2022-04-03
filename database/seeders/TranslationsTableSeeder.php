@@ -18,7 +18,7 @@ class TranslationsTableSeeder extends Seeder
     public function run()
     {
         $this->dataTypesTranslations();
-        $this->currencysTranslations();
+        $this->currenciesTranslations();
         $this->menusTranslations();
     }
 
@@ -27,19 +27,19 @@ class TranslationsTableSeeder extends Seeder
      *
      * @return void
      */
-    private function currencysTranslations()
+    private function currenciesTranslations()
     {
-        // Adding translations for 'currencys'
+        // Adding translations for 'currencies'
         //
         $cat = Currency::where('name', 'currency-1')->first();
         if ($cat->exists) {
-            $this->trans('pt', $this->arr(['currencys', 'name'], $cat->id), 'currency-1');
-            $this->trans('pt', $this->arr(['currencys', 'description'], $cat->id), 'Currency 1');
+            $this->trans('pt', $this->arr(['currencies', 'name'], $cat->id), 'currency-1');
+            $this->trans('pt', $this->arr(['currencies', 'description'], $cat->id), 'Currency 1');
         }
         $cat = Currency::where('name', 'currency-2')->first();
         if ($cat->exists) {
-            $this->trans('pt', $this->arr(['currencys', 'name'], $cat->id), 'currency-2');
-            $this->trans('pt', $this->arr(['currencys', 'description'], $cat->id), 'Currency 2');
+            $this->trans('pt', $this->arr(['currencies', 'name'], $cat->id), 'currency-2');
+            $this->trans('pt', $this->arr(['currencies', 'description'], $cat->id), 'Currency 2');
         }
     }
 
@@ -66,7 +66,7 @@ class TranslationsTableSeeder extends Seeder
         $_tpl = ['data_types', $_fld];
         $dtp = DataType::where($_fld, __('joy-voyager-bread-currency::seeders.data_types.category.plural'))->firstOrFail();
         if ($dtp->exists) {
-            $this->trans('pt', $this->arr($_tpl, $dtp->id), 'Currencys');
+            $this->trans('pt', $this->arr($_tpl, $dtp->id), 'Currencies');
         }
     }
 
@@ -78,9 +78,9 @@ class TranslationsTableSeeder extends Seeder
     private function menusTranslations()
     {
         $_tpl = ['menu_items', 'title'];
-        $_item = $this->findMenuItem(__('joy-voyager-bread-currency::seeders.menu_items.currencys'));
+        $_item = $this->findMenuItem(__('joy-voyager-bread-currency::seeders.menu_items.currencies'));
         if ($_item->exists) {
-            $this->trans('pt', $this->arr($_tpl, $_item->id), 'Currencys');
+            $this->trans('pt', $this->arr($_tpl, $_item->id), 'Currencies');
         }
     }
 

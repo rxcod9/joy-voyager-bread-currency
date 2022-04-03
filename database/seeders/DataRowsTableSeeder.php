@@ -14,7 +14,7 @@ class DataRowsTableSeeder extends Seeder
      */
     public function run()
     {
-        $currencyDataType = DataType::where('slug', 'currencys')->firstOrFail();
+        $currencyDataType = DataType::where('slug', 'currencies')->firstOrFail();
 
         $dataRow = $this->dataRow($currencyDataType, 'id');
         if (!$dataRow->exists) {
@@ -239,12 +239,12 @@ class DataRowsTableSeeder extends Seeder
                 'delete'       => 0,
                 'details'      => [
                     'model'       => 'Joy\\VoyagerBreadCurrency\\Models\\Currency',
-                    'table'       => 'currencys',
+                    'table'       => 'currencies',
                     'type'        => 'belongsTo',
                     'column'      => 'parent_id',
                     'key'         => 'id',
                     'label'       => 'name',
-                    'pivot_table' => 'currencys',
+                    'pivot_table' => 'currencies',
                     'pivot'       => 0,
                 ],
                 'order'        => 16,

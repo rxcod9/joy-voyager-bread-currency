@@ -12,10 +12,10 @@ class DataTypesTableSeeder extends Seeder
      */
     public function run()
     {
-        $dataType = $this->dataType('slug', 'currencys');
+        $dataType = $this->dataType('slug', 'currencies');
         if (!$dataType->exists) {
             $dataType->fill([
-                'name'                  => 'currencys',
+                'name'                  => 'currencies',
                 'display_name_singular' => __('joy-voyager-bread-currency::seeders.data_types.currency.singular'),
                 'display_name_plural'   => __('joy-voyager-bread-currency::seeders.data_types.currency.plural'),
                 'icon'                  => 'voyager-bread',

@@ -25,7 +25,7 @@ class VoyagerDatabaseSeeder extends Seeder
             // UserSettingsPermissionsTableSeeder::class,
             PermissionRoleTableSeeder::class,
             // UserSettingsTableSeeder::class,
-            CurrencysTableSeeder::class,
+            CurrenciesTableSeeder::class,
         ]);
     }
 }

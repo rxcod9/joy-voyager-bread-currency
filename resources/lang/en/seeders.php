@@ -15,11 +15,11 @@ return [
     'data_types' => [
         'currency' => [
             'singular' => 'Currency',
-            'plural'   => 'Currencys',
+            'plural'   => 'Currencies',
         ],
     ],
     'menu_items' => [
-        'currencys' => 'Currencys',
+        'currencies' => 'Currencies',
     ],
     'settings' => [
         'currency' => [

@@ -13,6 +13,6 @@ class PermissionsTableSeeder extends VoyagerPermissionsTableSeeder
      */
     public function run()
     {
-        Permission::generateFor('currencys');
+        Permission::generateFor('currencies');
     }
 }

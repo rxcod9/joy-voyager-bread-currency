@@ -21,9 +21,9 @@ class MenuItemsTableSeeder extends Seeder
     
         $menuItem = MenuItem::firstOrNew([
             'menu_id' => $menu->id,
-            'title'   => __('joy-voyager-bread-currency::seeders.menu_items.currencys'),
+            'title'   => __('joy-voyager-bread-currency::seeders.menu_items.currencies'),
             'url'     => '',
-            'route'   => 'voyager.currencys.index',
+            'route'   => 'voyager.currencies.index',
         ]);
         if (!$menuItem->exists) {
             $menuItem->fill([

@@ -5,7 +5,7 @@ namespace Joy\VoyagerBreadCurrency\Database\Seeders;
 use Joy\VoyagerBreadCurrency\Models\Currency;
 use Illuminate\Database\Seeder;
 
-class DummyCurrencysTableSeeder extends Seeder
+class DummyCurrenciesTableSeeder extends Seeder
 {
     /**
      * Auto generated seed file.

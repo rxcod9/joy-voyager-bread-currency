@@ -18,7 +18,7 @@ class DataTypesTableSeeder extends Seeder
                 'name'                  => 'currencies',
                 'display_name_singular' => __('joy-voyager-bread-currency::seeders.data_types.currency.singular'),
                 'display_name_plural'   => __('joy-voyager-bread-currency::seeders.data_types.currency.plural'),
-                'icon'                  => 'voyager-bread',
+                'icon'                  => 'voyager-bread voyager-bread-currency voyager-dollar',
                 'model_name'            => 'Joy\\VoyagerBreadCurrency\\Models\\Currency',
                 // 'policy_name'           => 'Joy\\VoyagerBreadCurrency\\Policies\\CurrencyPolicy',
                 // 'controller'            => 'Joy\\VoyagerBreadCurrency\\Http\\Controllers\\VoyagerBreadCurrencyController',
